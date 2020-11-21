@@ -14,5 +14,3 @@ You can assume that the input to the function will always be a valid date (as a 
 */
 
 const lifePathNumber = date => date.replace(/\D/g, '') % 9 || 9;
-
-console.log(lifePathNumber("1879-03-14"));
