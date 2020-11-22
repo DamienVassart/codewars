@@ -4,4 +4,4 @@ Implement a function that determines whether a string that contains only letters
 Assume the empty string is an isogram. Ignore letter case.
 */
 
-const isIsogram = str => [... new Set(str.toLowerCase().split(''))].length == str.length;
+const isIsogram = str => new Set(str.toLowerCase()).size == str.length;
