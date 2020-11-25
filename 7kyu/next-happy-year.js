@@ -7,6 +7,6 @@ Given a year, Find The next happy year or The closest year You'll see your best 
 */
 
 function nextHappyYear(year){
-    while (new Set(++year+'').size < 4);
-    return year;
+    while (new Set(++year+'').size < 4)
+    return year
 }
