@@ -1,3 +1,3 @@
 Codewars JS challenges
 
-https://www.codewars.com/users/DamienVassart/badges/large
+![Codewars badge](https://www.codewars.com/users/DamienVassart/badges/large)
