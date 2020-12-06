@@ -11,11 +11,4 @@ the first being the last number m with at most 2 digits obtained by your functio
 the second one being the number of steps to get the result.
 */
 
-function seven(n) {
-    let m = n, steps = 0;
-    while (m > 99) {
-        steps++;
-        m = (''+m).slice(0, -1) - (2 * (''+m).slice(-1));
-    }  
-    return [m, steps];
-}
+const seven = (n, steps = 0) => n < 100 ? [n, steps] : seven(Math.floor((n / 10) - 2 * (n % 10)), ++steps);
