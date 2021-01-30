@@ -15,4 +15,4 @@ Here is another example:
 You will be given a lowercase string and your task is to return True if at least one of the outcomes is a palindrome or False otherwise.
 */
 
-const solve = s => [...s].map(l => l.charCodeAt()).map((e, i, arr) => !(Math.abs(e - arr[arr.length - 1 - i]) > 2 || Math.abs(e - arr[arr.length - 1 - i]) === 1)).every(e => e);
+const solve = s => [...s].map(l => l.charCodeAt()).map((e, i, arr) => [0, 2].includes(Math.abs(e - arr[arr.length - 1 - i]))).every(e => e);
