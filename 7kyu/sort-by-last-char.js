@@ -8,6 +8,6 @@ All inputs will be valid.
 
 function last(x){
 	let split = x.split(' ');
-	let last = [... new Set(split.map(str => str.slice(-1)).sort())];
-	return last.reduce((res, l) => res.concat(split.filter(str => str.slice(-1) === l)) , []);
+	let lastLetters = [... new Set(split.map(str => str.slice(-1)).sort())];
+	return lastLetters.reduce((res, l) => res.concat(split.filter(str => str.slice(-1) === l)) , []);
 }
