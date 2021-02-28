@@ -9,20 +9,9 @@ You should return an object with a separate properties for each of types present
 function separateTypes(input) {
 	let res = {};
 	for (let value of input) {
-		switch (typeof value) {
-			case 'number' :
-				if (!res.hasOwnProperty('number')) res.number = [];
-				res.number.push(value);
-				break;
-			case 'string' :
-				if (!res.hasOwnProperty('string')) res.string = [];
-				res.string.push(value);
-				break;
-			case 'boolean' :
-				if (!res.hasOwnProperty('boolean')) res.boolean = [];
-				res.boolean.push(value);
-				break;
-		}
+		let key = typeof value;
+		if (!res.hasOwnProperty(key)) res[key] = [];
+		res[key].push(value);
 	}
 	return res;
 }
