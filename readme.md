@@ -1,6 +1,6 @@
 # Codewars
 
-Codewars JS challenges I solved.
+Codewars JS, Python & C challenges I solved.
 
 ![Codewars badge](https://www.codewars.com/users/DamienVassart/badges/large)
 
