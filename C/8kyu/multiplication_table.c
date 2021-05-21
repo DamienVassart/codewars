@@ -17,7 +17,7 @@ For example, a multiplication table (string) for number == 5 looks like below:
 
 char *multi_table(int num)
 {
-    char *table = calloc(128, sizeof(char));
+    char *table = malloc(128 * sizeof(char));
     for (int i = 1; i <= 10; i++)
     {
       sprintf(table, (i < 10) ? "%s%d * %d = %d\n" : "%s%d * %d = %d",table, i, num, (i * num));  
